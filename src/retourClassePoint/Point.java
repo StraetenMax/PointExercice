@@ -33,7 +33,17 @@ public class Point<a> {
 	//méthodes
 	public Point translation(double a, double b){
 		return new Point(this.positionX + a, this.positionY + b);
-	
+	}
+
+	public static double distance(Point P1, Point P2){
+		return Math.sqrt(Math.pow(P1.positionX - P2.positionX,2)+ Math.pow(P1.positionY - P2.positionY, 2));
+	}
+
+	public String toString(){
+		return "p = "+ (this.getPositionX()+" ,"+this.getPositionY());
 	}
 }
+
+
+
 

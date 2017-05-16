@@ -11,7 +11,11 @@ public class TestPoint {
 		Point p3 = p1.translation(2.0, 1.5);
 		
 		//appeler les méthodes
-		
+		double d = Point.distance(p1, p2);
+		System.out.println("p1 = "+ p1);
+		System.out.println("p2 = "+ p2);
+		System.out.println("p3 = "+ p3);
+		System.out.println("Distance = " + d);
 		
 	}
 
