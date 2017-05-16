@@ -2,21 +2,32 @@ package retourClassePoint;
 
 public class Point<a> {
 	//propriétés
+	private int id;
 	private double positionX;
 	private double positionY;
+	public static int count;
 
 	
 	//constructeurs vide et initialisé
 	public Point(){
+		id = ++count;
 		positionX = 00.0;
 		positionY = 00.0;
 	}
 	public Point(double positionX, double positionY){
+		id = ++count;
 		this.positionX = positionX;
 		this.positionY = positionY;
 	}
 	
 	//accesseurs et mutateurs
+	public int getId(){
+		return id;
+	}
+	public void setId(){
+		id = ++count;
+	}
+	
 	public double getPositionX(){
 		return positionX;
 	}
@@ -40,7 +51,7 @@ public class Point<a> {
 	}
 
 	public String toString(){
-		return "p = "+ (this.getPositionX()+" ,"+this.getPositionY());
+		return "p"+this.getId()+" = "+ (this.getPositionX()+" ,"+this.getPositionY());
 	}
 }
 
