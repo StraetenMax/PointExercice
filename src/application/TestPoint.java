@@ -17,8 +17,7 @@ public class TestPoint {
 		
 		for(Point s : points)
 		System.out.println(s);
-		//System.out.println("p2 = "+ points[1]);
-		System.out.println("p3 = "+ p3);
+		System.out.println(p3);
 		System.out.println("Distance = " + d);
 		
 	}
