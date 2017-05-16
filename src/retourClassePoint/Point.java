@@ -1,14 +1,15 @@
 package retourClassePoint;
 
-public class Point {
+public class Point<a> {
 	//propriétés
 	private double positionX;
 	private double positionY;
+
 	
 	//constructeurs vide et initialisé
 	public Point(){
-		positionX = 00.00;
-		positionY = 00.00;
+		positionX = 00.0;
+		positionY = 00.0;
 	}
 	public Point(double positionX, double positionY){
 		this.positionX = positionX;
@@ -26,7 +27,13 @@ public class Point {
 		return positionY;	
 	}
 	public void setPositionY(double positionY){
-		this.positionY = positionY;
-		
+		this.positionY = positionY;	
+	}
+	
+	//méthodes
+	public Point translation(double a, double b){
+		return new Point(this.positionX + a, this.positionY + b);
+	
 	}
 }
+
